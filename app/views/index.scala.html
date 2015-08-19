@@ -1,7 +1,7 @@
 @(message: String)
 
 @main("Welcome to Play") {
-
-    @play20.welcome(message)
-
+  <div id="application"></div>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("react-with-addons.min.js"))"></script>
+  <script src="@routes.Assets.versioned("javascripts/components/App.js")"></script>
 }
